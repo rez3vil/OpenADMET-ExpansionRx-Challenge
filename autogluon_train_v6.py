@@ -369,7 +369,6 @@ def main():
         "RF": {},
         "XT": {},
         "KNN": {},
-        "LR": {},
         "NN_TORCH": {}
     }
     
@@ -420,4 +419,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
