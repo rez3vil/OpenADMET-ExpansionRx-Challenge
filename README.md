@@ -29,7 +29,7 @@ More info: [How it works](https://auto.gluon.ai/stable/tutorials/tabular/how-it-
 
 #### Training Usage
 ```
-python autogluon_train_v6.py --csv data.csv --smiles_col SMILES --target_col pIC50 --outdir run_001
+python autogluon_train_v6.py --csv expansion_data_train.csv --smiles_col SMILES --target_col LogD --outdir run_001
 ```
 options:
 |Arguments|Description|Default|
