@@ -59,7 +59,7 @@ options:
 
 #### Inference Usage
 ```
-python autogluon_pred_v6.py --csv test.csv --model_dir run_001 --out predictions.csv
+python autogluon_pred_v6.py --csv expansion_data_test_blinded.csv --model_dir run_001 --out predictions.csv
 ```
 
 options:
