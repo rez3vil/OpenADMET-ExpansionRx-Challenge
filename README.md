@@ -1,11 +1,11 @@
 # OpenADMET-ExpansionRx-Challenge
 
-This repository contains code to train and predict endpoints for [OpenADMET + ExpansionRx Blind Challenge (2025)](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge). Readme file contains trained models summary at a glance.
+This repository contains code to train and predict endpoints for [OpenADMET + ExpansionRx Blind Challenge (2025)](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge). Readme file also contains trained models summary at a glance.
 
 These scripts exclusively uses AutoGluon framework to achieve it's predictive performance. It is different because it doesn’t rely on Hyper Paramaters Optimizations to achieve great performance, but rather it’s based on three main principles:  
 1. Training a variety of different models,
 2. Using bagging when training those models, and  
-3. stack-ensembling those models to combine their predictive power into a “super” model.
+3. Stack-ensembling those models to combine their predictive power into a “super” model.
 
 More info: [How it works](https://auto.gluon.ai/stable/tutorials/tabular/how-it-works.html)
 
@@ -19,11 +19,11 @@ More info: [How it works](https://auto.gluon.ai/stable/tutorials/tabular/how-it-
 
 #### Requirements
 - autogluon == 1.4.0
-- scikit-learn
-- rdkit
-- pandas
-- numpy
-- python > 3.9
+- scikit-learn == 1.7.2
+- rdkit == 2025.9.1
+- pandas == 2.3.3
+- numpy == 2.3.4
+- python == 3.12.12
 
 ---
 
