@@ -3,12 +3,16 @@
 This repository contains Training and Inference scripts for [OpenADMET + ExpansionRx Blind Challenge (2025)](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
 
 The scripts exclusively uses AutoGluon library to achieve it's predictive performance. It is different because it doesn’t rely on Hyper Paramaters Optimizations to achieve great performance, but rather it’s based on three main principles:  
-(1) training a variety of different models,  
-(2) using bagging when training those models, and  
-(3) stack-ensembling those models to combine their predictive power into a “super” model.  
+1. Training a variety of different models,
+2. Using bagging when training those models, and  
+3. stack-ensembling those models to combine their predictive power into a “super” model.
+
 More info: [How it works](https://auto.gluon.ai/stable/tutorials/tabular/how-it-works.html)
 
-**Author:** Piyush Sawner <br>
+**Author:** Piyush Sawner  
+
+**User:** `rez3vil`
+
 **Date:** January 16, 2026
 
 ---
@@ -102,3 +106,17 @@ No additional dataset was used for training. All the endpoints were converted to
 - Device: CPU
 
 ### Summary of the Models (only best ones)
+All the predicted values were converted back to its original scale (reversal of log transformation) except LogD. 
+|SN|Endpoints|R^2|Pearson R|Median Absolute Error|Mean Absoulte Error|MSE|RMSE|
+|---|---|---|---|---|---|---|---|
+|1|LogD|0.916|0.958|0.175|0.241|0.120|0.347|
+|2|KSol|0.730|0.855|0.152|0.256|0.143|0.378|
+|3|HLM CLint|0.653|0.810|0.200|0.272|0.139|0.372|
+|4|MLM CLint|0.733|0.857|0.209|0.297|0.170|0.412|
+|5|Caco-2 Permeability Papp A>B|0.702|0.841|0.143|0.181|0.055|0.235|
+|6|Caco-2 Permeability Efflux|0.671|0.821|0.085|0.127|0.036|0.191|
+|7|MPPB|0.785|0.886|0.129|0.161|0.048|0.219|
+|8|MBPB|0.850|0.923|0.095|0.120|0.027|0.166|
+|9|MGMB|0.805|0.908|0.103|0.124|0.027|0.164|
+
+
