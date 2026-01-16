@@ -1,8 +1,8 @@
 # OpenADMET-ExpansionRx-Challenge
 
-This repository contains Training and Inference scripts for [OpenADMET + ExpansionRx Blind Challenge (2025)](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
+This repository contains code to train and predict endpoints for [OpenADMET + ExpansionRx Blind Challenge (2025)](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge). Readme file contains trained models summary at a glance.
 
-The scripts exclusively uses AutoGluon library to achieve it's predictive performance. It is different because it doesn’t rely on Hyper Paramaters Optimizations to achieve great performance, but rather it’s based on three main principles:  
+These scripts exclusively uses AutoGluon framework to achieve it's predictive performance. It is different because it doesn’t rely on Hyper Paramaters Optimizations to achieve great performance, but rather it’s based on three main principles:  
 1. Training a variety of different models,
 2. Using bagging when training those models, and  
 3. stack-ensembling those models to combine their predictive power into a “super” model.
