@@ -107,7 +107,7 @@ No additional dataset was used for training. All the endpoints were converted to
 
 ### Summary of the Models (only best ones)
 All the predicted values were converted back to its original scale (reversal of log transformation) except LogD. 
-|SN|Endpoints|R^2|Pearson R|Median Absolute Error|Mean Absoulte Error|MSE|RMSE|
+|SN|Endpoints|R^2|Pearson R|MEDAE|MAE|MSE|RMSE|
 |---|---|---|---|---|---|---|---|
 |1|LogD|0.916|0.958|0.175|0.241|0.120|0.347|
 |2|KSol|0.730|0.855|0.152|0.256|0.143|0.378|
